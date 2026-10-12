@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aakriti Garkoti | CS & Operations Specialist</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        bgMain: '#0c0b0a',
+                        cardMain: '#141312',
+                        cardHover: '#1c1a17',
+                        borderMain: '#26231f',
+                        goldMain: '#f59e0b',
+                        goldHover: '#d97706',
+                        textMuted: '#9e978e',
+                        textBright: '#f3f1ed'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Instrument Serif', 'serif'],
+                        mono: ['JetBrains Mono', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            background-color: #0c0b0a;
+            color: #d6d0c7;
+            font-family: 'Inter', sans-serif;
+        }
+        .font-serif-italic {
+            font-family: 'Instrument Serif', serif;
+            font-style: italic;
+        }
+        .gold-pill {
+            background-color: rgba(245, 158, 11, 0.1);
+            border: 1px solid rgba(245, 158, 11, 0.25);
+            color: #f59e0b;
+        }
+        .card-glow {
+            box-shadow: 0 0 35px -10px rgba(0, 0, 0, 0.8);
+        }
+        .glow-ambient {
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(245, 158, 11, 0.04) 0%, rgba(0,0,0,0) 70%);
+            top: -100px;
+            left: -100px;
+            pointer-events: none;
+            z-index: 0;
+        }
+        .nav-link.active {
+            color: #f59e0b;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between selection:bg-amber-500 selection:text-black relative overflow-x-hidden">
+    
+    <div class="glow-ambient"></div>
+
+    <header class="sticky top-0 z-40 w-full bg-[#0c0b0a]/90 backdrop-blur-md border-b border-borderMain px-4 lg:px-12 py-4">
+        <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-4">
+            
+            <!-- Brand Logo -->
+            <a href="#home" class="flex items-center gap-3 group">
+                <span class="w-9 h-9 rounded-full bg-borderMain text-goldMain border border-goldMain/30 flex items-center justify-center font-bold text-xs tracking-wider group-hover:bg-goldMain group-hover:text-black transition-all">AG</span>
+                <div class="flex flex-col">
+                    <span class="text-white font-semibold text-sm tracking-wide">Aakriti Garkoti</span>
+                    <span class="text-[11px] text-textMuted font-mono">CS & Operations Specialist</span>
+                </div>
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="hidden md:flex items-center gap-8 text-xs font-medium tracking-wider uppercase text-textMuted">
+                <a href="#about" class="nav-link hover:text-white transition-colors">About</a>
+                <a href="#experience" class="nav-link hover:text-white transition-colors">Experience & Seminars</a>
+                <a href="#projects" class="nav-link hover:text-white transition-colors">Projects</a>
+                <a href="#skills" class="nav-link hover:text-white transition-colors">Skills</a>
+                <a href="#contact" class="nav-link hover:text-white transition-colors">Contact</a>
+            </nav>
+
+            <!-- Top Right GitHub CTA -->
+            <a href="https://github.com/aakritigarkoti" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-lg bg-cardMain border border-borderMain hover:border-goldMain/50 text-xs font-mono text-textBright hover:text-goldMain transition flex items-center gap-2">
+                GitHub <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+            </a>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 lg:px-12 py-10 w-full space-y-24 z-10">
+
+        <section id="home" class="pt-6 pb-12 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+            
+            <!-- Left Hero Content -->
+            <div class="lg:col-span-7 space-y-6">
+                
+                <!-- Status Pill Tag -->
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-mono gold-pill">
+                    <span class="w-2 h-2 rounded-full bg-goldMain animate-pulse"></span>
+                    Available for Tech Management, Operations & Client Technical Roles
+                </div>
+
+                <!-- Main Heading (Exact Serif + Italic Style from Screenshot) -->
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-normal text-textBright tracking-tight leading-[1.1]">
+                    Bridging computer science precision with <span class="font-serif-italic text-goldMain font-normal">human coordination</span> and strategy.
+                </h1>
+
+                <!-- Subtitle Paragraph -->
+                <p class="text-base text-textMuted leading-relaxed max-w-2xl font-normal">
+                    I am a Computer Science Specialist who translates technical workflows (Python, SQL, APIs, AI/ML) into clear operational strategies. Experienced in project coordination, public speaking, cybersecurity awareness, and technical recruitment.
+                </p>
+
+                <!-- Hero CTA Buttons -->
+                <div class="flex flex-wrap items-center gap-4 pt-2">
+                    <a href="#experience" class="px-6 py-3 rounded-lg bg-goldMain hover:bg-goldHover text-black font-semibold text-sm transition flex items-center gap-2 shadow-lg shadow-amber-500/10">
+                        Explore Work <i class="fa-solid fa-arrow-down text-xs"></i>
+                    </a>
+                    <a href="https://github.com/aakritigarkoti" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-lg bg-cardMain hover:bg-cardHover border border-borderMain text-textBright font-mono text-xs transition flex items-center gap-2">
+                        View GitHub Projects
+                    </a>
+                    <a href="#contact" class="text-xs font-mono text-textMuted hover:text-goldMain transition flex items-center gap-1.5 px-2 py-3">
+                        Get in touch &rarr;
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Side "AT A GLANCE" Card (Exact Replica) -->
+            <div class="lg:col-span-5">
+                <div class="bg-cardMain border border-borderMain rounded-2xl p-6 sm:p-7 space-y-6 card-glow relative overflow-hidden">
+                    <div class="flex items-center justify-between border-b border-borderMain/80 pb-4">
+                        <span class="text-[11px] font-mono tracking-widest text-goldMain uppercase">AT A GLANCE</span>
+                        <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                    </div>
+
+                    <div class="space-y-1">
+                        <h2 class="text-xl font-bold text-textBright">Aakriti Garkoti</h2>
+                        <p class="text-xs text-textMuted font-mono">Computer Science & Engineering Specialist</p>
+                    </div>
+
+                    <div class="space-y-3 pt-2 text-xs font-mono">
+                        <div class="flex justify-between items-center py-1.5 border-b border-borderMain/40">
+                            <span class="text-textMuted">Core Tech:</span>
+                            <span class="text-textBright font-semibold">Python, SQL, APIs, AI/ML</span>
+                        </div>
+                        <div class="flex justify-between items-center py-1.5 border-b border-borderMain/40">
+                            <span class="text-textMuted">Focus Areas:</span>
+                            <span class="text-textBright font-semibold">Operations, Client Relations</span>
+                        </div>
+                        <div class="flex justify-between items-center py-1.5 border-b border-borderMain/40">
+                            <span class="text-textMuted">Public Speaking:</span>
+                            <span class="text-textBright font-semibold">Seminar Speaker</span>
+                        </div>
+                        <div class="flex justify-between items-center py-1.5">
+                            <span class="text-textMuted">Location:</span>
+                            <span class="text-textBright font-semibold">Uttarakhand, India</span>
+                        </div>
+                    </div>
+
+                    <!-- Highlight Box Inside Card -->
+                    <div class="bg-[#1c1a17] border border-borderMain p-3.5 rounded-xl flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-lg bg-goldMain/10 border border-goldMain/20 text-goldMain flex items-center justify-center text-sm flex-shrink-0">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-textBright">Cybersecurity Club Contributor</p>
+                            <p class="text-[11px] text-textMuted">Technical Seminar Presenter</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="pt-8 border-t border-borderMain space-y-8">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-4">
+                <div class="space-y-2">
+                    <span class="text-xs font-mono text-goldMain uppercase tracking-widest">// Background & Purpose</span>
+                    <h2 class="text-3xl font-normal text-textBright">About Me</h2>
+                </div>
+                <p class="text-xs font-mono text-textMuted">B.Tech CS Graduate &bull; May 2026</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                <div class="lg:col-span-8 bg-cardMain border border-borderMain p-6 sm:p-8 rounded-2xl space-y-4">
+                    <h3 class="text-lg font-bold text-textBright">Bridging Technical Literacy & Operations</h3>
+                    <p class="text-sm text-textMuted leading-relaxed">
+                        Graduating in May 2026 with a B.Tech in Computer Science, I bring hands-on experience in Python, REST APIs, SQL, and AI/ML model integrations. However, my core strength lies in translating technical complexities into streamlined operations, client success pipelines, and project coordination.
+                    </p>
+                    <p class="text-sm text-textMuted leading-relaxed">
+                        Rather than focusing solely on day-to-day software development, I excel in cross-functional roles: Technical Operations, Technical Account Management (TAM), Project Coordination, and Technical Recruitment. I connect software teams with business requirements efficiently.
+                    </p>
+                </div>
+
+                <div class="lg:col-span-4 bg-cardMain border border-borderMain p-6 rounded-2xl space-y-4 flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs font-mono text-goldMain uppercase">Target Role Pillars</span>
+                        <ul class="mt-3 space-y-2.5 text-xs font-mono text-textBright">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-goldMain"></i> Technical Account Management</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-goldMain"></i> Operations & Process Execution</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-goldMain"></i> Project & Client Coordination</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-goldMain"></i> Technical Recruitment & Sourcing</li>
+                        </ul>
+                    </div>
+                    <div class="pt-4 border-t border-borderMain/60">
+                        <span class="text-[11px] font-mono text-textMuted">Core Education: B.Tech Computer Science</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="pt-8 border-t border-borderMain space-y-8">
+            <div class="space-y-2">
+                <span class="text-xs font-mono text-goldMain uppercase tracking-widest">// Industry History</span>
+                <h2 class="text-3xl font-normal text-textBright">Work Experience</h2>
+            </div>
+
+            <div class="space-y-6">
+                
+                <!-- Sevalink Care -->
+                <div class="bg-cardMain border border-borderMain hover:border-borderMain/80 p-6 sm:p-8 rounded-2xl space-y-4 transition">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-borderMain/60 pb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-textBright">Frontend Developer Intern</h3>
+                            <p class="text-xs font-mono text-goldMain">Sevalink Care</p>
+                        </div>
+                        <span class="text-xs font-mono text-textMuted bg-[#1c1a17] px-3 py-1 rounded-md border border-borderMain w-fit">Mar 2026 – May 2026</span>
+                    </div>
+                    <ul class="space-y-2 text-sm text-textMuted leading-relaxed list-disc list-inside">
+                        <li>Engineered accessible, responsive frontend components for healthcare workflows, optimizing cross-browser layout performance.</li>
+                        <li>Coordinated closely with engineering leads and product stakeholders to align technical UI deliverables with operational client requirements.</li>
+                        <li>Streamlined user testing and frontend bug triaging to accelerate release cycles across deployment sprints.</li>
+                    </ul>
+                    <div class="flex flex-wrap gap-2 pt-2 font-mono text-[11px]">
+                        <span class="px-2.5 py-1 rounded bg-[#1c1a17] text-textMuted border border-borderMain">React</span>
+                        <span class="px-2.5 py-1 rounded bg-[#1c1a17] text-textMuted border border-borderMain">JavaScript</span>
+                        <span class="px-2.5 py-1 rounded bg-[#1c1a17] text-textMuted border border-borderMain">UI/UX Coordination</span>
+                        <span class="px-2.5 py-1 rounded bg-[#1c1a17] text-textMuted border border-borderMain">Process Optimization</span>
+                    </div>
+                </div>
+
+                <!-- ShadowFox -->
+                <div class="bg-cardMain border border-borderMain hover:border-borderMain/80 p-6 sm:p-8 rounded-2xl space-y-4 transition">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-borderMain/60 pb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-textBright">AI / ML Intern</h3>
+                            <p class="text-xs font-mono text-goldMain">ShadowFox</p>
+                        </div>
+                        <span class="text-xs font-mono text-textMuted bg-[#1c1a17] px-3 py-1 rounded-md border border-borderMain w-fit">Oct 2025 – Nov 2025</span>
+                    </div>
+                    <ul class="space-y-2 text-sm text-textMuted leading-relaxed list-disc list-inside">
+                        <li>Developed and evaluated machine learning models for structured dataset classification and predictive analysis.</li>
+                        <li>Managed data cleaning pipelines, feature engineering, and performance metric tracking (Precision, Recall, F1-score).</li>
+                        <li>Documented machine learning model architectures and presented technical summaries to project advisors.</li>
+                    </ul>
+                    <div class="flex flex-wrap gap-2 pt-2 font-mono text-[11px]">
+                        <span class="px-2.5 py-1 rounded bg-[#1c1a17] text-textMuted border border-borderMain">Python</span>
+                        <span class="px-2.5 py-1 rounded bg-[#1c1a17] text-textMuted border border-borderMain">Machine Learning</span>
+                        <span class="px-2.5 py-1 rounded bg-[#1c1a17] text-textMuted border border-borderMain">Data Preprocessing</span>
+                        <span class="px-2.5 py-1 rounded bg-[#1c1a17] text-textMuted border border-borderMain">Model Metrics</span>
+                    </div>
+                </div>
+
+                <!-- Bharat Intern -->
+                <div class="bg-cardMain border border-borderMain hover:border-borderMain/80 p-6 sm:p-8 rounded-2xl space-y-4 transition">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-borderMain/60 pb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-textBright">Web Development Intern</h3>
+                            <p class="text-xs font-mono text-goldMain">Bharat Intern</p>
+                        </div>
+                        <span class="text-xs font-mono text-textMuted bg-[#1c1a17] px-3 py-1 rounded-md border border-borderMain w-fit">Feb 2024 – Mar 2024</span>
+                    </div>
+                    <ul class="space-y-2 text-sm text-textMuted leading-relaxed list-disc list-inside">
+                        <li>Built and integrated Node.js / Express backend API endpoints to handle application data synchronization.</li>
+                        <li>Implemented asynchronous routing and error-handling routines to maintain server uptime during peak request tests.</li>
+                        <li>Collaborated on technical documentation to streamline onboarding for new developer contributors.</li>
+                    </ul>
+                    <div class="flex flex-wrap gap-2 pt-2 font-mono text-[11px]">
+                        <span class="px-2.5 py-1 rounded bg-[#1c1a17] text-textMuted border border-borderMain">Node.js</span>
+                        <span class="px-2.5 py-1 rounded bg-[#1c1a17] text-textMuted border border-borderMain">Express.js</span>
+                        <span class="px-2.5 py-1 rounded bg-[#1c1a17] text-textMuted border border-borderMain">REST APIs</span>
+                        <span class="px-2.5 py-1 rounded bg-[#1c1a17] text-textMuted border border-borderMain">Backend Logic</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="seminars" class="pt-8 border-t border-borderMain space-y-8">
+            <div class="space-y-2">
+                <span class="text-xs font-mono text-goldMain uppercase tracking-widest">// Public Speaking & Leadership</span>
+                <h2 class="text-3xl font-normal text-textBright">Cybersecurity Club & Seminars</h2>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                
+                <!-- Left Description -->
+                <div class="lg:col-span-5 bg-cardMain border border-borderMain p-6 sm:p-8 rounded-2xl space-y-4">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono gold-pill">
+                        <i class="fa-solid fa-microphone-lines text-goldMain"></i> Speaker & Contributor
+                    </div>
+                    <h3 class="text-2xl font-bold text-textBright">Dark Web Security & Awareness Keynote</h3>
+                    <p class="text-sm text-textMuted leading-relaxed">
+                        Active member and speaker for the university Cybersecurity Club (May 2023 – June 2024). Spearheaded technical seminars addressing Dark Web architecture, encryption protocols, and digital privacy strategies.
+                    </p>
+                    <ul class="space-y-2.5 text-xs font-mono text-textBright pt-2">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-goldMain"></i> Audience Engagement & Live Q&A</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-goldMain"></i> Complex Concept Simplification</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-goldMain"></i> Campus Event Moderation & Logistics</li>
+                    </ul>
+                </div>
+
+                <!-- Right Photo Gallery with Robust SVG Fallbacks -->
+                <div class="lg:col-span-7 space-y-3">
+                    <div class="flex items-center justify-between text-xs font-mono text-textMuted">
+                        <span>LIVE SEMINAR PHOTOS</span>
+                        <span>Click photo for full screen</span>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        
+                        <!-- Photo 1 -->
+                        <div onclick="openLightbox('speaking1.jpg', 'Keynote Presentation on Dark Web Security & Encryption')" class="group relative bg-cardMain border border-borderMain rounded-2xl overflow-hidden h-60 cursor-pointer card-glow">
+                            <img src="speaking1.jpg" alt="Aakriti Garkoti Seminar Presentation" class="w-full h-full object-cover transition duration-500 group-hover:scale-105" onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'100%\' height=\'100%\' viewBox=\'0 0 300 200\' fill=\'%23141312\'><rect width=\'300\' height=\'200\' fill=\'%230c0b0a\'/><path d=\'M100 120 L150 70 L200 120\' stroke=\'%2326231f\' stroke-width=\'4\' fill=\'none\'/><circle cx=\'150\' cy=\'60\' r=\'12\' fill=\'%23f59e0b\'/><text x=\'50%\' y=\'75%\' fill=\'%23f59e0b\' font-size=\'12\' font-family=\'monospace\' text-anchor=\'middle\'>speaking1.jpg</text><text x=\'50%\' y=\'87%\' fill=\'%239e978e\' font-size=\'10\' font-family=\'sans-serif\' text-anchor=\'middle\'>Seminar Keynote Presentation</text></svg>';">
+                            <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                                <span class="px-3 py-1.5 rounded-lg bg-black/80 text-goldMain border border-goldMain/30 text-xs font-mono"><i class="fa-solid fa-expand mr-1.5"></i> Inspect View</span>
+                            </div>
+                        </div>
+
+                        <!-- Photo 2 -->
+                        <div onclick="openLightbox('speaking2.jpg', 'Interactive Q&A Session with Campus Audience')" class="group relative bg-cardMain border border-borderMain rounded-2xl overflow-hidden h-60 cursor-pointer card-glow">
+                            <img src="speaking2.jpg" alt="Aakriti Garkoti Audience Session" class="w-full h-full object-cover transition duration-500 group-hover:scale-105" onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'100%\' height=\'100%\' viewBox=\'0 0 300 200\' fill=\'%23141312\'><rect width=\'300\' height=\'200\' fill=\'%230c0b0a\'/><path d=\'M80 140 C120 100, 180 100, 220 140\' stroke=\'%2326231f\' stroke-width=\'4\' fill=\'none\'/><circle cx=\'150\' cy=\'80\' r=\'12\' fill=\'%23f59e0b\'/><text x=\'50%\' y=\'75%\' fill=\'%23f59e0b\' font-size=\'12\' font-family=\'monospace\' text-anchor=\'middle\'>speaking2.jpg</text><text x=\'50%\' y=\'87%\' fill=\'%239e978e\' font-size=\'10\' font-family=\'sans-serif\' text-anchor=\'middle\'>Interactive Audience Q&A</text></svg>';">
+                            <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                                <span class="px-3 py-1.5 rounded-lg bg-black/80 text-goldMain border border-goldMain/30 text-xs font-mono"><i class="fa-solid fa-expand mr-1.5"></i> Inspect View</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="projects" class="pt-8 border-t border-borderMain space-y-8">
+            <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+                <div class="space-y-2">
+                    <span class="text-xs font-mono text-goldMain uppercase tracking-widest">// Technical & AI Builds</span>
+                    <h2 class="text-3xl font-normal text-textBright">Featured Projects</h2>
+                </div>
+                <a href="https://github.com/aakritigarkoti" target="_blank" rel="noopener noreferrer" class="text-xs font-mono text-goldMain hover:underline flex items-center gap-1.5">
+                    Explore All Repositories on GitHub &rarr;
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                <!-- DocuBotX -->
+                <div class="bg-cardMain border border-borderMain hover:border-goldMain/40 p-6 rounded-2xl flex flex-col justify-between space-y-6 transition group">
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs font-mono text-goldMain">01 / AI NLP</span>
+                            <a href="https://github.com/aakritigarkoti/DocuBotX" target="_blank" rel="noopener noreferrer" class="text-textMuted hover:text-goldMain transition">
+                                <i class="fa-brands fa-github text-lg"></i>
+                            </a>
+                        </div>
+                        <h3 class="text-xl font-bold text-textBright group-hover:text-goldMain transition">DocuBotX</h3>
+                        <p class="text-xs text-textMuted leading-relaxed">
+                            Multi-PDF QA pipeline leveraging natural language processing and vector embeddings to extract concise answers from multiple document uploads concurrently.
+                        </p>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex flex-wrap gap-1.5 font-mono text-[10px]">
+                            <span class="px-2 py-0.5 rounded bg-[#1c1a17] text-textMuted border border-borderMain">LangChain</span>
+                            <span class="px-2 py-0.5 rounded bg-[#1c1a17] text-textMuted border border-borderMain">FAISS</span>
+                            <span class="px-2 py-0.5 rounded bg-[#1c1a17] text-textMuted border border-borderMain">Python</span>
+                        </div>
+                        <a href="https://github.com/aakritigarkoti/DocuBotX" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-mono text-goldMain hover:underline">
+                            View Code Repository <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CodeBuddy -->
+                <div class="bg-cardMain border border-borderMain hover:border-goldMain/40 p-6 rounded-2xl flex flex-col justify-between space-y-6 transition group">
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs font-mono text-goldMain">02 / Developer Tool</span>
+                            <a href="https://github.com/aakritigarkoti/CodeBuddy" target="_blank" rel="noopener noreferrer" class="text-textMuted hover:text-goldMain transition">
+                                <i class="fa-brands fa-github text-lg"></i>
+                            </a>
+                        </div>
+                        <h3 class="text-xl font-bold text-textBright group-hover:text-goldMain transition">CodeBuddy</h3>
+                        <p class="text-xs text-textMuted leading-relaxed">
+                            Interactive AI coding tutor companion that demystifies complex algorithms and data structures through structured explanations, step diagrams, and debugging support.
+                        </p>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex flex-wrap gap-1.5 font-mono text-[10px]">
+                            <span class="px-2 py-0.5 rounded bg-[#1c1a17] text-textMuted border border-borderMain">Streamlit</span>
+                            <span class="px-2 py-0.5 rounded bg-[#1c1a17] text-textMuted border border-borderMain">Gemini API</span>
+                            <span class="px-2 py-0.5 rounded bg-[#1c1a17] text-textMuted border border-borderMain">Python</span>
+                        </div>
+                        <a href="https://github.com/aakritigarkoti/CodeBuddy" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-mono text-goldMain hover:underline">
+                            View Code Repository <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- MindScript -->
+                <div class="bg-cardMain border border-borderMain hover:border-goldMain/40 p-6 rounded-2xl flex flex-col justify-between space-y-6 transition group">
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs font-mono text-goldMain">03 / Knowledge AI</span>
+                            <a href="https://github.com/aakritigarkoti/MindScript" target="_blank" rel="noopener noreferrer" class="text-textMuted hover:text-goldMain transition">
+                                <i class="fa-brands fa-github text-lg"></i>
+                            </a>
+                        </div>
+                        <h3 class="text-xl font-bold text-textBright group-hover:text-goldMain transition">MindScript</h3>
+                        <p class="text-xs text-textMuted leading-relaxed">
+                            AI-driven note generation and learning summarization utility engineered with custom NLP prompt structures to convert lengthy technical resources into actionable summaries.
+                        </p>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex flex-wrap gap-1.5 font-mono text-[10px]">
+                            <span class="px-2 py-0.5 rounded bg-[#1c1a17] text-textMuted border border-borderMain">Python</span>
+                            <span class="px-2 py-0.5 rounded bg-[#1c1a17] text-textMuted border border-borderMain">NLP Pipelines</span>
+                            <span class="px-2 py-0.5 rounded bg-[#1c1a17] text-textMuted border border-borderMain">Summarization</span>
+                        </div>
+                        <a href="https://github.com/aakritigarkoti/MindScript" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-mono text-goldMain hover:underline">
+                            View Code Repository <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="skills" class="pt-8 border-t border-borderMain space-y-8">
+            <div class="space-y-2">
+                <span class="text-xs font-mono text-goldMain uppercase tracking-widest">// Capability Matrix</span>
+                <h2 class="text-3xl font-normal text-textBright">Core Competencies</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <div class="bg-cardMain border border-borderMain p-6 rounded-2xl space-y-3">
+                    <h3 class="text-sm font-mono text-goldMain uppercase">01 / Technical Foundations</h3>
+                    <div class="flex flex-wrap gap-1.5 font-mono text-xs text-textBright">
+                        <span class="px-2.5 py-1 rounded bg-[#1c1a17] border border-borderMain">Python</span>
+                        <span class="px-2.5 py-1 rounded bg-[#1c1a17] border border-borderMain">SQL</span>
+                        <span class="px-2.5 py-1 rounded bg-[#1c1a17] border border-borderMain">REST APIs</span>
+                        <span class="px-2.5 py-1 rounded bg-[#1c1a17] border border-borderMain">AI / ML</span>
+                    </div>
+                </div>
+
+                <div class="bg-cardMain border border-borderMain p-6 rounded-2xl space-y-3">
+                    <h3 class="text-sm font-mono text-goldMain uppercase">02 / Operations & Strategy</h3>
+                    <div class="flex flex-wrap gap-1.5 font-mono text-xs text-textBright">
+                        <span class="px-2.5 py-1 rounded bg-[#1c1a17] border border-borderMain">Technical Account Management</span>
+                        <span class="px-2.5 py-1 rounded bg-[#1c1a17] border border-borderMain">Process Mapping</span>
+                        <span class="px-2.5 py-1 rounded bg-[#1c1a17] border border-borderMain">Bug Triaging</span>
+                    </div>
+                </div>
+
+                <div class="bg-cardMain border border-borderMain p-6 rounded-2xl space-y-3">
+                    <h3 class="text-sm font-mono text-goldMain uppercase">03 / Talent & Client Success</h3>
+                    <div class="flex flex-wrap gap-1.5 font-mono text-xs text-textBright">
+                        <span class="px-2.5 py-1 rounded bg-[#1c1a17] border border-borderMain">Technical Recruitment</span>
+                        <span class="px-2.5 py-1 rounded bg-[#1c1a17] border border-borderMain">Client Coordination</span>
+                        <span class="px-2.5 py-1 rounded bg-[#1c1a17] border border-borderMain">Sourcing</span>
+                    </div>
+                </div>
+
+                <div class="bg-cardMain border border-borderMain p-6 rounded-2xl space-y-3">
+                    <h3 class="text-sm font-mono text-goldMain uppercase">04 / Communication</h3>
+                    <div class="flex flex-wrap gap-1.5 font-mono text-xs text-textBright">
+                        <span class="px-2.5 py-1 rounded bg-[#1c1a17] border border-borderMain">Public Speaking</span>
+                        <span class="px-2.5 py-1 rounded bg-[#1c1a17] border border-borderMain">Seminar Moderation</span>
+                        <span class="px-2.5 py-1 rounded bg-[#1c1a17] border border-borderMain">Technical Presentations</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contact" class="pt-8 border-t border-borderMain space-y-8">
+            <div class="space-y-2">
+                <span class="text-xs font-mono text-goldMain uppercase tracking-widest">// Direct Connections</span>
+                <h2 class="text-3xl font-normal text-textBright">Get In Touch</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <!-- Email -->
+                <div class="bg-cardMain border border-borderMain p-6 rounded-2xl space-y-4">
+                    <div class="w-10 h-10 rounded-lg bg-goldMain/10 border border-goldMain/20 text-goldMain flex items-center justify-center text-base">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-base font-bold text-textBright">Direct Email</h3>
+                        <p class="text-xs font-mono text-textMuted">garkotiaakriti@gmail.com</p>
+                    </div>
+                    <button onclick="copyToClipboard('garkotiaakriti@gmail.com', 'email-toast')" class="w-full py-2 px-3 rounded-lg bg-[#1c1a17] hover:bg-borderMain border border-borderMain text-xs font-mono text-textBright transition flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-copy text-goldMain"></i> <span id="email-toast">Copy Email Address</span>
+                    </button>
+                </div>
+
+                <!-- GitHub -->
+                <div class="bg-cardMain border border-borderMain p-6 rounded-2xl space-y-4">
+                    <div class="w-10 h-10 rounded-lg bg-goldMain/10 border border-goldMain/20 text-goldMain flex items-center justify-center text-base">
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-base font-bold text-textBright">GitHub</h3>
+                        <p class="text-xs font-mono text-textMuted">github.com/aakritigarkoti</p>
+                    </div>
+                    <a href="https://github.com/aakritigarkoti" target="_blank" rel="noopener noreferrer" class="w-full py-2 px-3 rounded-lg bg-[#1c1a17] hover:bg-borderMain border border-borderMain text-xs font-mono text-textBright transition flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-arrow-up-right-from-square text-goldMain"></i> Visit GitHub Profile
+                    </a>
+                </div>
+
+                <!-- LinkedIn -->
+                <div class="bg-cardMain border border-borderMain p-6 rounded-2xl space-y-4">
+                    <div class="w-10 h-10 rounded-lg bg-goldMain/10 border border-goldMain/20 text-goldMain flex items-center justify-center text-base">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-base font-bold text-textBright">LinkedIn</h3>
+                        <p class="text-xs font-mono text-textMuted">aakriti-garkoti</p>
+                    </div>
+                    <a href="https://linkedin.com/in/aakriti-garkoti" target="_blank" rel="noopener noreferrer" class="w-full py-2 px-3 rounded-lg bg-[#1c1a17] hover:bg-borderMain border border-borderMain text-xs font-mono text-textBright transition flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-arrow-up-right-from-square text-goldMain"></i> Connect on LinkedIn
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="w-full border-t border-borderMain bg-cardMain/60 py-6 px-4 mt-16 text-center text-xs font-mono text-textMuted">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>© Aakriti Garkoti. Computer Science & Operations Specialist.</p>
+            <p class="text-textMuted">Khatima, Uttarakhand, India</p>
+        </div>
+    </footer>
+
+    <div id="lightbox-modal" class="fixed inset-0 bg-black/90 z-50 hidden flex flex-col items-center justify-center p-4">
+        <div class="relative max-w-4xl w-full flex flex-col items-center space-y-3">
+            <button onclick="closeLightbox()" class="self-end text-textMuted hover:text-goldMain text-sm font-mono flex items-center gap-2">
+                [ESC] Close &times;
+            </button>
+            <img id="lightbox-img" src="" alt="Expanded Seminar Preview" class="max-h-[80vh] max-w-full rounded-xl border border-borderMain object-contain card-glow">
+            <p id="lightbox-caption" class="text-xs font-mono text-textMuted text-center"></p>
+        </div>
+    </div>
+
+    <script>
+        // Copy to clipboard with toast feedback
+        function copyToClipboard(text, elementId) {
+            const tempInput = document.createElement('input');
+            tempInput.value = text;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+
+            const msgElement = document.getElementById(elementId);
+            if (msgElement) {
+                const originalText = msgElement.innerText;
+                msgElement.innerText = "Copied to Clipboard!";
+                setTimeout(() => {
+                    msgElement.innerText = originalText;
+                }, 2200);
+            }
+        }
+
+        // Photo Lightbox modal triggers
+        function openLightbox(imgSrc, caption) {
+            const modal = document.getElementById('lightbox-modal');
+            const img = document.getElementById('lightbox-img');
+            const cap = document.getElementById('lightbox-caption');
+
+            img.src = imgSrc;
+            cap.innerText = caption;
+            modal.classList.remove('hidden');
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox-modal').classList.add('hidden');
+        }
+
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') closeLightbox();
+        });
+    </script>
+</body>
+</html>
